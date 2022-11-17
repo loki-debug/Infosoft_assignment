@@ -6,10 +6,13 @@ class Node():
         self.right_child: Optional[Node] = None
 
     def insert(self, node: 'Node') -> bool:
+        # Previous code: if node.start <= self.end [Fixed code as below]
         if node.start < self.end:
             if not self.right_child:
                 self.right_child = node
+                # Previous code: return True [Fixed code as below]
                 return False
+            # Previous code: return self.left_child.insert(node) [Fixed code as below]
             return self.right_child.insert(node)
         elif node.end >= self.start:
             if not self.left_child:
