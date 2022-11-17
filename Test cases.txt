@@ -1,0 +1,47 @@
+
+Problem 1 :
+
+data_stream = DataStream()
+data_stream.should_output_data_str(timestamp=0, data_string="hello")
+data_stream.should_output_data_str(timestamp=1, data_string="world")
+data_stream.should_output_data_str(timestamp=6, data_string="hello")
+data_stream.should_output_data_str(timestamp=7, data_string="hello")
+data_stream.should_output_data_str(timestamp=8, data_string="world")
+
+
+Problem 2:
+
+fuel_station = FuelStation(diesel=2, petrol=2, electric=1)
+fuel_station.fuel_vehicle("diesel") 
+fuel_station.fuel_vehicle("petrol") 
+fuel_station.fuel_vehicle("diesel") 
+fuel_station.fuel_vehicle("electric") 
+fuel_station.fuel_vehicle("diesel") 
+fuel_station.open_fuel_slot("diesel") 
+fuel_station.fuel_vehicle("diesel") 
+fuel_station.open_fuel_slot("electric")
+fuel_station.open_fuel_slot("electric")
+
+
+
+Problem 3:
+
+from calendar import *
+calendar = Calendar()
+calendar.book(5, 10)
+
+calendar.book(8, 13)
+
+calendar.book(10, 15)
+
+
+
+
+
+
+
+
+Python 2.7.17
+
+sudo apt-get install python3.7
+
